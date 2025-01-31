@@ -1,0 +1,145 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+  .package {
+    background-color: var(--main-color);
+  }
+
+  .package-section-title {
+    color: var(--second-color);
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .package-list-services {
+    display: none;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .package-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .package-list__item {
+    color: var(--second-color);
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-bottom: -15px;
+    font-size: 20px;
+    font-weight: 400;
+    border-top: 2px solid var(--second-color);
+  }
+
+  .package-list__item:last-child {
+    border-bottom: 2px solid var(--second-color);
+    margin-bottom: 20px;
+  }
+
+  .package-list-title-point {
+    color: var(--second-color);
+    margin-right: 10px;
+  }
+
+  .package-list-title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .package-list-services {
+    list-style: "❯❯";
+    text-align: left;
+  }
+  .package-list-service {
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+}
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+  .package {
+    background-color: rgba(97, 82, 77, 1);
+  }
+
+  .package-section-title {
+    color: var(--second-color);
+  }
+
+  .package-list {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .package-list__item {
+    color: var(--second-color);
+    font-size: 15px;
+    width: 30%;
+    font-weight: 400;
+  }
+
+  .package-list-title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
+  .package-list-services {
+    list-style: "❯❯";
+    text-align: left;
+  }
+  .package-list-service {
+    padding-left: 10px;
+  }
+
+  .package-list-service:not(:last-child) {
+    padding-bottom: 15px;
+  }
+}
+
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+  .package {
+    background-color: rgba(97, 82, 77, 1);
+  }
+
+  .package-section-title {
+    color: var(--second-color);
+  }
+
+  .package-list {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .package-list__item {
+    color: var(--second-color);
+    font-size: 15px;
+    width: 30%;
+    font-weight: 400;
+  }
+
+  .package-list-title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
+  .package-list-services {
+    list-style: "❯❯";
+    text-align: left;
+  }
+  .package-list-service {
+    padding-left: 10px;
+  }
+
+  .package-list-service:not(:last-child) {
+    padding-bottom: 15px;
+  }
+}

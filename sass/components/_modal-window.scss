@@ -1,0 +1,81 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 30px);
+    max-width: 450px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+  }
+  .modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid var(--main-color);
+    padding: 0;
+  }
+
+  .modal-close-btn-icon {
+    fill: var(--main-color);
+  }
+}
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background-color: var(--second-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--second-color);
+    border: 2px solid var(--main-color);
+    padding: 0;
+  }
+  .modal-close-btn-icon {
+    fill: var(--main-color);
+  }
+}
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    height: 500px;
+  }
+
+  .modal-close-btn {
+    &:hover,
+    &:focus {
+      border: var(--second-color);
+    }
+  }
+}

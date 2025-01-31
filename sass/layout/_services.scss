@@ -1,0 +1,99 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+  .services {
+    background: var(--second-color);
+  }
+  .service-section-title {
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .services-list {
+    list-style: "❯❯";
+    padding-left: 10px;
+    color: var(--main-color);
+  }
+  .services-list__item {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .services-list__title {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .services-list__description {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+}
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+  .services {
+    background: var(--second-color);
+  }
+  .service-section-title {
+    color: rgba(97, 82, 77, 1);
+  }
+
+  .services-list {
+    list-style: "❯❯";
+    padding-left: 20px;
+    color: var(--main-color);
+  }
+  .services-list__item {
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+
+  .services-list__title {
+    font-size: 20px;
+    color: rgba(97, 82, 77, 1);
+    font-weight: 600;
+  }
+
+  .services-list__description {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(97, 82, 77, 1);
+  }
+}
+
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+  .services {
+    background: var(--second-color);
+  }
+  .service-section-title {
+    color: rgba(97, 82, 77, 1);
+  }
+
+  .services-list {
+    list-style: "❯❯";
+    padding-left: 150px;
+    color: var(--main-color);
+  }
+  .services-list__item {
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+
+  .services-list__title {
+    font-size: 20px;
+    color: rgba(97, 82, 77, 1);
+    font-weight: 600;
+  }
+
+  .services-list__description {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(97, 82, 77, 1);
+  }
+}

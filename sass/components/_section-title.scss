@@ -1,0 +1,31 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 30px;
+  }
+}
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 30px;
+  }
+}
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,18 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 30px 15px;
+  }
+}
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 30px 15px;
+  }
+}
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 60px 15px;
+  }
+}

@@ -1,0 +1,89 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+  .spheres {
+    background: var(--main-color);
+    padding: 15px 0;
+    width: 100vw;
+  }
+  .spehres-text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--second-color);
+    text-align: center;
+  }
+  .spheres__box {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    color: var(--main-color);
+    animation: myAnim 4s ease 0s infinite normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .spheres__img {
+    width: 100vw;
+  }
+}
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+  .spheres {
+    background: var(--main-color);
+    padding: 0;
+  }
+  .spheres__box {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    color: var(--main-color);
+    animation: myAnim 4s ease 0s infinite normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .spheres__img {
+    width: 100vw;
+  }
+}
+
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+  .spheres {
+    background: var(--main-color);
+    padding: 0;
+  }
+  .spheres__box {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    color: var(--main-color);
+    animation: myAnim 4s ease 0s infinite normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .spheres__img {
+    width: 100vw;
+  }
+}

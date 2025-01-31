@@ -1,0 +1,138 @@
+/*---------MOBILE---------------*/
+@media screen and (max-width: 767px) {
+  .clients {
+    background: var(--second-color);
+  }
+
+  .clients-section-title {
+    color: var(--main-color);
+  }
+
+  .clients-box {
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: first baseline;
+  }
+
+  .clients-list__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cleints-list-logo {
+    width: 100px;
+  }
+  .client-name {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 5px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    font-size: 34px;
+    color: var(--main-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .custom-prev {
+    left: -20px;
+  }
+  .custom-next {
+    right: -20px;
+  }
+}
+/*-----------TABLET--------------*/
+@media screen and (min-width: 768px) {
+  .clients {
+    background: var(--second-color);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .clients-box {
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 90%;
+  }
+  .clients-section-title {
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+
+  .clients-list__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients-list-logo {
+    width: 190px;
+  }
+
+  .client-name {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 5px;
+  }
+  .clients-slider {
+    position: relative;
+    overflow: visible;
+  }
+
+  .custom-prev,
+  .custom-next {
+    font-size: 34px;
+    color: var(--main-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    user-select: none;
+  }
+
+  .custom-prev {
+    left: 0px;
+  }
+  .custom-next {
+    right: -20px;
+  }
+}
+/*---------------DESKTOP-----------------*/
+@media screen and (min-width: 1200px) {
+  .clients-list-logo {
+    width: 320px;
+  }
+
+  .clients-list__link {
+    transition: var(--transition-main);
+
+    &:hover,
+    &:focus {
+      border-color: var(--main-color);
+      scale: 90%;
+    }
+  }
+}
