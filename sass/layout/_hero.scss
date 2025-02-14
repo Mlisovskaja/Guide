@@ -1,89 +1,75 @@
 /*---------MOBILE---------------*/
 @media (max-width: 767px) {
   .hero.section {
-    padding: 1rem;
     text-align: center;
     background-color: var(--main-color);
-    margin-bottom: -1px;
-  }
-
-  .hero__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .hero-main {
-    width: 100vw;
-    background: linear-gradient(
-      to top,
-      #e3002b 0%,
-      #ff5a5a 15%,
-      #ffffff 80%,
-      #ffffff 100%
+    background-image: image-set(
+      url("/images/mobile/hero/hero-1x.jpg") 1x,
+      url("/images/mobile/hero/hero-2x.jpg") 2x
     );
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    height: 610px;
+    position: relative;
+    margin-bottom: 40px;
   }
 
   .hero__title {
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 500;
     color: #000;
     line-height: 1.1;
     margin: 10px 15px;
+    text-align: left;
+    font-style: italic;
   }
 
-  .hero__img-box {
-    width: 100%;
-    max-width: 300px;
-    margin-left: 30%;
+  .accent-red {
+    color: var(--red-color);
   }
 
-  .hero__img {
-    width: 100%;
+  .hero__bnt-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-color);
+    width: 100vw;
+    margin: 0;
+    padding: 15px 15px 30px 15px;
+    gap: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .price_old {
     font-weight: 200;
-    font-size: 30px;
+    font-size: 23px;
     text-decoration: line-through;
-    color: var(--second-color);
+    color: var(--main-color);
   }
 
   .price_new {
     font-weight: 400;
-    font-size: 40px;
-    color: var(--second-color);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-      0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
-  }
-  .hero__bnt-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    font-size: 26px;
+    color: var(--main-color);
   }
 
-  .hero__btn {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    padding: 0.8rem;
-    font-size: 20px;
+  .hero__btn1 {
+    position: absolute;
+    width: 80vw;
+    padding: 15px;
+    font-size: 23px;
     font-weight: 400;
-    color: #fff;
-    background-color: var(--main-color);
-    border: 2px solid var(--second-color);
+    color: var(--main-color);
+    background-color: var(--red-color);
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-
-  #timer {
-    font-size: 30px;
-    color: var(--second-color);
-    font-weight: bold;
-    margin-top: 5px;
+    border: none;
+    bottom: -5%;
+    transform: translateX(-50%);
+    text-align: center;
   }
 }
 

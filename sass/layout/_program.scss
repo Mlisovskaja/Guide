@@ -1,38 +1,40 @@
 /*---------MOBILE---------------*/
 @media screen and (max-width: 767px) {
-  .services {
+  .program {
     background: var(--main-color);
+    padding-bottom: 100px;
   }
-  .service-section-title {
+  .program-section-title {
     color: var(--green-color);
     font-size: 22px;
     text-transform: uppercase;
     font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
   }
 
-  .services-list {
+  .program-list {
     list-style: "●";
     padding-left: 10px;
     color: var(--lightgreen-color);
   }
-  .services-list__item {
+  .program-list__item {
     padding-left: 20px;
     padding-bottom: 20px;
-  }
-
-  .services-list__title {
-    font-size: 20px;
-    font-weight: 500;
     font-style: italic;
-    color: #000;
   }
 
-  .services-list__description {
+  .program-list__title {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .program-list__description {
     padding-top: 10px;
     font-size: 20px;
     font-weight: 400;
     color: #000;
-    font-style: italic;
   }
 }
 /*-----------TABLET--------------*/
