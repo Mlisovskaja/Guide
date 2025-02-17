@@ -1,51 +1,45 @@
 /*---------MOBILE---------------*/
 @media screen and (max-width: 767px) {
   .call {
-    background: var(--second-color);
+    background: var(--main-color);
     width: 100vw;
     padding-left: 0;
+    padding-bottom: 0;
   }
   .call__box {
     width: 100vw;
     padding-left: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .call_text {
-    font-size: 15px;
-    color: var(--main-color);
-    text-align: right;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   .call_text-box {
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
   }
   .call_text_accent {
-    font-weight: 600;
+    color: var(--green-color);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
   }
 
-  .call__bnt-box {
-    margin: 20px;
-    display: flex;
-    justify-content: right;
+  .call__img-box {
+    width: 100vw;
   }
-  .call__btn {
-    color: var(--main-color);
-    background-color: var(--second-color);
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    border: 2px solid var(--main-color);
-    border-radius: 4px;
-    padding: 7px 16px;
+
+  .call__img {
+    width: 100vw;
   }
 }
 /*-----------TABLET--------------*/

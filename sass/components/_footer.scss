@@ -1,9 +1,14 @@
 /*---------MOBILE---------------*/
 @media screen and (max-width: 767px) {
   .footer {
-    background-color: var(--main-color);
+    background-color: var(--lightgreen-color);
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
+  }
+
+  .footer-sn-box {
+    display: flex;
+    justify-content: center;
   }
 
   .footer-tablet-box {
@@ -12,85 +17,6 @@
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-  }
-
-  .footer-address-box {
-    text-align: center;
-    display: table;
-    margin-bottom: 20px;
-    width: 300px;
-  }
-
-  .footer__logo-box {
-    width: 180px;
-  }
-
-  .address {
-    margin-top: 20px;
-  }
-
-  .footer-contacts-list-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-
-  .footer-address-link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
-    transition: var(--transition-main);
-
-    &:hover,
-    &:focus {
-      font-weight: 600;
-    }
-  }
-
-  .footer-contact-e-mail {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
-    transition: var(--transition-main);
-
-    &:hover,
-    &:focus {
-      font-weight: 600;
-    }
-  }
-
-  .footer-contact-phone-number {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
-    transition: var(--transition-main);
-
-    &:hover,
-    &:focus {
-      font-weight: 600;
-    }
-  }
-
-  .contacts-list-item:not(:last-of-type) {
-    margin-bottom: 9px;
-  }
-
-  .footer-sn-title {
-    display: block;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--second-color);
-    margin-bottom: 20px;
   }
 
   .footer-social-list {
@@ -107,7 +33,7 @@
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    fill: var(--second-color);
+    fill: var(--green-color);
     transition: var(--transition-main);
 
     &:hover,
@@ -116,14 +42,14 @@
     }
   }
 
-  .footer-copyright {
-    color: var(--second-color);
+  .footer-link {
+    color: var(--green-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 400;
-    margin-top: 40px;
+    margin: 10px 5px;
   }
 }
 

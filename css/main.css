@@ -105,9 +105,13 @@ button {
 /*---------MOBILE---------------*/
 @media screen and (max-width: 767px) {
   .footer {
-    background-color: var(--main-color);
+    background-color: var(--lightgreen-color);
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
+  }
+  .footer-sn-box {
+    display: flex;
+    justify-content: center;
   }
   .footer-tablet-box {
     display: flex;
@@ -115,70 +119,6 @@ button {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-  }
-  .footer-address-box {
-    text-align: center;
-    display: table;
-    margin-bottom: 20px;
-    width: 300px;
-  }
-  .footer__logo-box {
-    width: 180px;
-  }
-  .address {
-    margin-top: 20px;
-  }
-  .footer-contacts-list-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  .footer-address-link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
-    transition: var(--transition-main);
-  }
-  .footer-address-link:hover, .footer-address-link:focus {
-    font-weight: 600;
-  }
-  .footer-contact-e-mail {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
-    transition: var(--transition-main);
-  }
-  .footer-contact-e-mail:hover, .footer-contact-e-mail:focus {
-    font-weight: 600;
-  }
-  .footer-contact-phone-number {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
-    transition: var(--transition-main);
-  }
-  .footer-contact-phone-number:hover, .footer-contact-phone-number:focus {
-    font-weight: 600;
-  }
-  .contacts-list-item:not(:last-of-type) {
-    margin-bottom: 9px;
-  }
-  .footer-sn-title {
-    display: block;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--second-color);
-    margin-bottom: 20px;
   }
   .footer-social-list {
     display: flex;
@@ -193,20 +133,20 @@ button {
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    fill: var(--second-color);
+    fill: var(--green-color);
     transition: var(--transition-main);
   }
   .footer-social-list-link:hover, .footer-social-list-link:focus {
     background-color: var(--main-color);
   }
-  .footer-copyright {
-    color: var(--second-color);
+  .footer-link {
+    color: var(--green-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 400;
-    margin-top: 40px;
+    margin: 10px 5px;
   }
 }
 /*-----------TABLET--------------*/
@@ -1753,12 +1693,15 @@ button {
 /*---------MOBILE---------------*/
 @media screen and (max-width: 767px) {
   .package {
-    background-color: var(--main-color);
+    background-color: var(--green-color);
   }
   .package-section-title {
-    color: var(--second-color);
-    font-size: 20px;
+    color: var(--main-color);
+    font-size: 22px;
     text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
   }
   .package-list-services {
     display: none;
@@ -1778,29 +1721,29 @@ button {
     margin-bottom: -15px;
     font-size: 20px;
     font-weight: 400;
-    border-top: 2px solid var(--second-color);
+    border-bottom: 2px dashed var(--main-color);
   }
   .package-list__item:last-child {
-    border-bottom: 2px solid var(--second-color);
+    border-bottom: 2px dashed var(--second-color);
     margin-bottom: 20px;
   }
   .package-list-title-point {
-    color: var(--second-color);
-    margin-right: 10px;
+    color: var(--lightgreen-color);
+    margin-left: 10px;
+    font-size: 25px;
   }
   .package-list-title {
     font-size: 20px;
     padding-bottom: 20px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
-  }
-  .package-list-services {
-    list-style: "❯❯";
-    text-align: left;
+    color: var(--main-color);
   }
   .package-list-service {
     padding-left: 10px;
     padding-bottom: 15px;
+    color: var(--main-color);
+    font-weight: 300;
   }
 }
 /*-----------TABLET--------------*/
@@ -1880,49 +1823,42 @@ button {
 /*---------MOBILE---------------*/
 @media screen and (max-width: 767px) {
   .call {
-    background: var(--second-color);
+    background: var(--main-color);
     width: 100vw;
     padding-left: 0;
+    padding-bottom: 0;
   }
   .call__box {
     width: 100vw;
     padding-left: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .call_text {
-    font-size: 15px;
-    color: var(--main-color);
-    text-align: right;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   .call_text-box {
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
   }
   .call_text_accent {
-    font-weight: 600;
-  }
-  .call__bnt-box {
-    margin: 20px;
-    display: flex;
-    justify-content: right;
-  }
-  .call__btn {
-    color: var(--main-color);
-    background-color: var(--second-color);
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
+    color: var(--green-color);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
     text-align: center;
-    letter-spacing: 0.03em;
-    border: 2px solid var(--main-color);
-    border-radius: 4px;
-    padding: 7px 16px;
+    margin-bottom: 15px;
+  }
+  .call__img-box {
+    width: 100vw;
+  }
+  .call__img {
+    width: 100vw;
   }
 }
 /*-----------TABLET--------------*/
